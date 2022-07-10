@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
 
-   installation
+   install
    usage
    plots
    simulations
