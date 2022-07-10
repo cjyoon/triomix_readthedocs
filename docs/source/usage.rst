@@ -1,49 +1,25 @@
 Usage
 =====
 
-.. _installation:
+.. _run:
 
-Installation
+Triomix command line
 ------------
 
-To use TrioMix, first install it using git:
+The basic command line of using TrioMix is the following:
 
 .. code-block:: console
 
-   $ git clone https://github.com/cjyoon/triomix.git
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta
 
-Installation dependencies 
-----------------
+Triomix command line with common SNP only
+------------
 
-TrioMix is written in Python (v3.5 or later) and R. Following Python and R packages are used in TrioMix. 
-* Python
-	* pysam
+Using a pre-selected list of common SNP would speed up the total runtime of TrioMix as the computation is limited to those regions instead of the entire genome. TrioMix provides a list of common ``GRCh38`` and ``GRCh37`` SNPs selected from the GnomAD database. These two files are found in the `github <https://github.com/cjyoon/triomix/common_snp/>`_ folder.  A ``-s`` argument specifies the SNP database that can be used. User can provide one's own set of SNP in BED format.
 
-* R
-	* optparse
-	* tidyverse
-	* bbmle
-
-
-Other dependencies 
-----------------
-
-TrioMix internally uses ``samtools`` ``Rscript`` ``gzip``. Make sure these are in your ``$PATH``. Otherwise, you can edit the absolute path of each of these in ``path_config.json``. 
-
-
-Using the docker images
-----------------
-Pre-built docker image with all prerequisites installed is available. 
 
 .. code-block:: console
 
-	$ docker pull cjyoon/triomix
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz
 
-
-Using the docker images
-----------------
-
-.. code-block:: console
-
-	$ docker pull cjyoon/triomix
-
+   
