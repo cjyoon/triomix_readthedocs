@@ -45,3 +45,14 @@ To detect contamination in the parent by the child's DNA, ``--parent`` option ca
    $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz --parent
 
 
+
+Running TrioMix with a docker image
+------------
+Following example demonstrates how docker image can be used for runnint TrioMix.
+
+.. code-block:: console
+
+   $ docker run -t -d  -v /home/ubuntu/data:/data -v /home/ubuntu/results:/results:rw -v /home/ubuntu/data/sib25/:/data/sib25/ --name triomix_local cjyoon/triomix:v1.4
+   $ docker exec -it triomix_local python /tools/triomix/triomix.py -f /data/M008_father.bam -m /data/M008_mother.bam -c /data/sib25/familymix.bam -r /data/Homo_sapiens_assembly38.fasta -t 10 -o results -s /tools/triomix/common_snp/grch38_common_snp.bed.gz
+
+
