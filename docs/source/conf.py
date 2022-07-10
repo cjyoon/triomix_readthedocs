@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'TrioMix'
+copyright = '2022, Christopher J. Yoon'
+author = 'Christopher J. Yoon'
 
 release = '0.1'
 version = '0.1.0'
