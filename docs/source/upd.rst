@@ -11,4 +11,4 @@ Triomix can detect uniparental disomy (UPD) since Mendelian inheritance is viola
 Here, we show expected patterns of GroupA and GroupB SNPs in the case of UPDs and also simple deletion cases.
 
 
-
+.. image:: images/UPD_diagram.jpg
