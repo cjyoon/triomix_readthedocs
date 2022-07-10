@@ -18,6 +18,7 @@ Contents
 
    install
    usage
-   plots
    simulations
+   plots
+   upd
    api

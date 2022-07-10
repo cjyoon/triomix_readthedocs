@@ -1,4 +1,4 @@
-Usage
+Installation
 =====
 
 .. _installation:
@@ -12,7 +12,7 @@ To use TrioMix, first install it using git:
 
    $ git clone https://github.com/cjyoon/triomix.git
 
-Installation dependencies 
+Dependencies 
 ----------------
 
 TrioMix is written in Python (v3.5 or later) and R. Following Python and R packages are used in TrioMix. 
