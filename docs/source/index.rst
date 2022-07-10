@@ -1,17 +1,16 @@
-Welcome to Lumache's documentation!
+Welcome to TrioMix's documentation!
 ===================================
+TrioMix is a bioinformatics tool to detect intrafamilial contamination, uniparental disomy, and chimerism by investigating inheritance patterns of SNPs. To estimate contamination it uses maximum likelihood esstimation (MLE) to accurately quantify contamination within family members of the parent-child trio. 
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
+TrioMix can be installed by cloning the `github <https://github.com/cjyoon/triomix>' or using the pre-built `docker <https://hub.docker.com/repository/docker/cjyoon/triomix>` image. 
+For details on installation and usage, see the :doc: 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
 .. note::
 
    This project is under active development.
+
 
 Contents
 --------

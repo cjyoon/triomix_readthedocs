@@ -6,14 +6,18 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use TrioMix, first install it using git:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+$ git clone https://github.com/cjyoon/triomix.git
 
-Creating recipes
+Using the docker images
 ----------------
+Pre-built docker image can be used. 
+.. code-block:: console
+$ docker pull cjyoon/triomix
+
 
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
