@@ -1,9 +1,9 @@
-Installation
+Install
 =====
 
-.. _installation:
+.. _install:
 
-Installation
+Install
 ------------
 
 To use TrioMix, first install it using git:
