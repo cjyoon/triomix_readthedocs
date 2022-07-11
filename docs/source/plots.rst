@@ -5,10 +5,17 @@ Plots
 .. _plots:
 
 
-Normal, uncontaminated
+Normal male offspring, uncontaminated 
 ------------
-.. image:: images/upid_example.jpg
-This is an example of SNP VAFs in a child without contamination.
+.. image:: images/normal_male.plot.jpg
+This is an example of SNP VAFs in a male offspring without contamination.
+
+
+Normal female offspring, uncontaminated 
+------------
+.. image:: images/normal_female.plot.jpg
+This is an example of SNP VAFs in a female offspring without contamination.
+
 
 
 
