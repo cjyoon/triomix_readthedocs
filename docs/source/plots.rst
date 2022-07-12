@@ -8,14 +8,13 @@ Plots
 Normal male offspring, uncontaminated 
 ------------
 .. image:: images/normal_male.plot.jpg
-This is an example of SNP VAFs in a male offspring without contamination.
+This is an example of SNP VAFs in a male offspring without contamination. Note the drop in depth and homozygosity of chrX. 
 
 
 Normal female offspring, uncontaminated 
 ------------
 .. image:: images/normal_female.plot.jpg
-This is an example of SNP VAFs in a female offspring without contamination.
-
+This is an example of SNP VAFs in a female offspring without contamination. Note that there is no paternal GroupB SNP on chrX since father only has one copy of chrX and cannot have heterozygous SNPs.
 
 
 
@@ -25,16 +24,16 @@ Uniparental disomy
 Paternal uniparental isodisomy (UPiD) of chr4 is shown. Homozygosity of GroupA SNPs suggests the presence of uniparental disomy. Homozygosity of GroupB SNPs further suggests uniparental isodisomy (UPiD). 
 
 
-Chimerism (from a sibling) ~ 22%
+Chimerism (from a sibling)
 ------------
 .. image:: images/chimera_example.jpg
-The meiotic recombination pattern between the two sibling zygotes are shown as segmental VAF patterns in GroupB SNPs.
+The meiotic recombination pattern between the two sibling zygotes are shown as segmental VAF patterns in GroupB SNPs. In this example Triomix quantified the ratio between the two zygotes of the chimera 22%:78% . 
 
 
-Maternal contamination in a placenta biopsy (~6.6% maternal DNA)
+Maternal contamination in a placenta biopsy 
 ------------
 .. image:: images/placenta_maternal_contam_example.jpg
-Maternal blood can contaminate the fetal portions of the placenta biopsy. Maternal GroupA VAFs are increased and paternal GroupA VAFs are decreased (although the change may not be apparent). In GroupB, additional non-zero low level VAFs are seen only from the mother which suggests DNA contamination originating from the mother. 
+Maternal blood can contaminate the fetal portions of the placenta biopsy. Maternal GroupA VAFs are increased and paternal GroupA VAFs are decreased (although the change may not be apparent). In GroupB, additional non-zero low level VAFs are seen only from the mother which suggests DNA contamination originating from the mother. In this example, TrioMix quantified that there is 6.6% maternal DNA contamination in the placenta biopsy. 
 
 
 Sample swap (father <-> offspring)

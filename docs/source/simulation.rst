@@ -11,7 +11,16 @@ Contamination can be simulated by randomly selecting read sequences from two BAM
 
 Test run with 1000 genomes trio
 ------------
-Here, a test case is provided with simulated contamination from a 1000 genomes family.
+In our `github <https://github.com/cjyoon/triomix/tree/master/test.sh>`_ a test script ``test.sh`` is provided which can created a simulated contamination BAM files from a 1000 genomes family. 
+
+.. code-block:: console
+
+   $ sh test.sh
+
+This will download the 1000 genomes trio CRAM files, create simulated contamination files by subsampling. Note this will requires ``XXXX`` tool to be installed in your ``$PATH``.
+
+
+CHECK IF TEST SCRIPT CAN BE CHANGED WITH SAMTOOLS MERGE and CRAM FILE USE, CRAI DOWNLOAD. 
 
 
 
@@ -21,3 +30,4 @@ Test results
 
 Test plots
 ------------
+.. image:: images/1000g_simulation.jpg

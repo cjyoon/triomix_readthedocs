@@ -4,11 +4,16 @@ TrioMix is a bioinformatics tool to detect **intrafamilial contamination**, **un
 
 TrioMix can be installed by cloning the `github <https://github.com/cjyoon/triomix>`_ or using the pre-built `docker <https://hub.docker.com/repository/docker/cjyoon/triomix>`_ image. 
 
-Check out the :doc:`usage` section for further information, including how to :ref:`installation` the project.
+Check out the :doc:`usage` section for further information, including how to :ref:`install` the project.
+
+If you use Triomix in your analysis, please cite our work published in XXXX.
+
+"Estimation of familial DNA contamination using Mendelian inconsistencies in next generation sequencing of trios. Yoon et al., XXXXX (2022)"
+
 
 .. note::
 
-   This project is under active development.
+   This project is under active development. Readthedocs pages are still underconstruction. 
 
 
 Contents
