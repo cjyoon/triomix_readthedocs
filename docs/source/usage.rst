@@ -91,7 +91,7 @@ TrioMix can be used with whole-exome sequencing. In this case, we recommend runn
 
 .. code-block:: console
 
-   $ triomix -f father.bam -m mother.bam -c child.bam -r reference.fasta -d 1
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -d 1
 
 
 Detection of intrafamilial contamination in the parent (i.e. parent DNA contamminated by child, or by another parent)
@@ -101,7 +101,7 @@ To detect intrafamilial DNA contamination in the parent, ``--parent`` option can
 
 .. code-block:: console
 
-   $ triomix -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz --parent
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz --parent
 
 Additional output generated with ``--parent`` 
 ------------
