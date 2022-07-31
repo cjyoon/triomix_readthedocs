@@ -10,12 +10,12 @@ By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer t
 
 .. code-block:: console
 
-   $ triomix -f father.bam -m mother.bam -c child.bam -r reference.fasta
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta
 
 
 
 .. code-block:: console
-   $ triomix -h
+   $ python triomix.py -h
    usage: triomix [-h] [--version] -f FATHER -m MOTHER -c CHILD -r REFERENCE [-s SNP] [-t THREAD] [-o OUTPUT_DIR]
                   [-p PREFIX] [--runmode {single,joint,all}] [-u {0,1}] [--parent] [-d DOWNSAMPLE]
 
@@ -48,7 +48,7 @@ By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer t
      --parent              Run detection of parental DNA contamination with child's DNA
      -d DOWNSAMPLE, --downsample DOWNSAMPLE
                            Downsampling for plotting.
-                           
+
 
 Triomix command line with common SNP only
 ------------
@@ -58,7 +58,7 @@ Using a pre-selected list of common SNP would speed up the total runtime of Trio
 
 .. code-block:: console
 
-   $ triomix -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz
 
 
 Other optional arguments
@@ -117,6 +117,6 @@ Following example demonstrates how docker image can be used for runnint TrioMix.
 .. code-block:: console
 
    $ docker run -t -d  -v /home/ubuntu/data:/data -v /home/ubuntu/results:/results:rw -v /home/ubuntu/data/sib25/:/data/sib25/ --name triomix_local cjyoon/triomix:v1.4
-   $ docker exec -it triomix_local triomix -f /data/M008_father.bam -m /data/M008_mother.bam -c /data/sib25/familymix.bam -r /data/Homo_sapiens_assembly38.fasta -t 10 -o results -s /tools/triomix/common_snp/grch38_common_snp.bed.gz
+   $ docker exec -it triomix_local python triomix.py -f /data/M008_father.bam -m /data/M008_mother.bam -c /data/sib25/familymix.bam -r /data/Homo_sapiens_assembly38.fasta -t 10 -o results -s /tools/triomix/common_snp/grch38_common_snp.bed.gz
 
 
