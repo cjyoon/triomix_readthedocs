@@ -20,7 +20,7 @@ In our `github <https://github.com/cjyoon/triomix/tree/master/test.sh>`_ a test 
 This will download the 1000 genomes trio CRAM files, create simulated contamination files by subsampling. Note this will requires ``XXXX`` tool to be installed in your ``$PATH``.
 
 
-CHECK IF TEST SCRIPT CAN BE CHANGED WITH SAMTOOLS MERGE and CRAM FILE USE, ALSO CRAI DOWNLOAD. 
+.. CHECK IF TEST SCRIPT CAN BE CHANGED WITH SAMTOOLS MERGE and CRAM FILE USE, ALSO CRAI DOWNLOAD. 
 
 
 Test results
