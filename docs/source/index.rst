@@ -27,4 +27,4 @@ Contents
    simulation
    plots
    upd
-   api
+   faq

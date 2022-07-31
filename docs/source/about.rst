@@ -17,22 +17,22 @@ If the genotypes of the parents are known, then the offspring's genotype can be 
 
 
 
-Detection of parental DNA contamination in the offspring
-------------
+.. Detection of parental DNA contamination in the offspring
+.. ------------
 
 
 
-Detection of sibling's DNA contamination in the offspring
-------------
+.. Detection of sibling's DNA contamination in the offspring
+.. ------------
 
 
 
-Detection of offspring's DNA contamination in the parent
-------------
+.. Detection of offspring's DNA contamination in the parent
+.. ------------
 
 
 
 
-Detection of contamination between the parents
-------------
+.. Detection of contamination between the parents
+.. ------------
 

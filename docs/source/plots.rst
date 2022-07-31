@@ -45,7 +45,7 @@ Sample swap between the father and offspring would lead to no GroupA SNPs since 
 
 Sample swap (mother <-> offspring)
 ------------
-.. image:: images/father_proband_swap.counts.plot.jpg
+.. image:: images/mother_proband_swap.counts.plot.jpg
 
 Sample swap between the mother and offspring would lead to no GroupA SNPs since a offspring and another parent can both be homozygous for a different allele at the same time (i.e. offspring: homo-alt, mother:homo-ref). Thus, there is no GroupA variants. For GroupB SNPs, if the offspring is a *het* genotype, then the mother can be a *het* or *homo-alt* genotype. Thus a *homo-alt* (VAF=1) is seen in GroupB in the parent that is swapped with an offspring.
 
