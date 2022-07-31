@@ -47,13 +47,13 @@ Triomix produces several output files files.
 
 
 
-Triomix with verifybamID2
+Triomix with whole-exome sequencing
 ------------
-``verifyBamID2`` is a robust tool that detects contamination from unrelated individuals. ``verifyBamID2`` can be run within TrioMix by adding ``--vbid [verifybamid resource file path]``. This resource file is also included in TrioMix as a `vbid <https://github.com/cjyoon/triomix/tree/master/vbid/>`_ folder in the github repository. This will run ``verifybamID2`` within Triomix for all three family members in the trio. 
+TrioMix can be used with whole-exome sequencing. In this case, we recommend running the command without the ``-s common_snp/common_snps.bed.gz``  to capture rare SNPs as well. This increases the overall number of SNPs while having minimal effect on the computational time due to smaller target in the exome sequeincing. For plotting, using ``-d 1`` is recommended to capture all data points in the plot without downsampling.
 
 .. code-block:: console
 
-   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz --vbid vbid/grch38
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -d 1
 
 
 Detection of intrafamilial contamination in the parent (i.e. parent DNA contamminated by child, or by another parent)
@@ -67,7 +67,8 @@ To detect intrafamilial DNA contamination in the parent, ``--parent`` option can
 
 Additional output generated with ``--parent`` 
 ------------
-``*.groupd.counts``
+``*.parent.counts``
+``*.parent.counts.summary.tsv``
 
 
 
