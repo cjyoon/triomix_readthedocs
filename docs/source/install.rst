@@ -24,6 +24,7 @@ TrioMix is written in Python (v3.5 or later) and R. Following Python and R packa
 	* optparse
 	* tidyverse
 	* bbmle
+	* PSCBS
 
 
 Other dependencies 

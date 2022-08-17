@@ -15,6 +15,14 @@ If the genotypes of the parents are known, then the offspring's genotype can be 
 
 
 
+SNP groups used in TrioMix
+------------
+
+TrioMix uses 5 different SNP groups in order to calculate different scenarios of contaminations. GroupA, GroupB, and GroupC are used to detect contamination in the child, and GroupD and GroupE are used to detect contamination in one of the parents. 
+
+
+.. image:: images/snp_groups.png
+
 
 
 .. Detection of parental DNA contamination in the offspring

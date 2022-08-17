@@ -22,9 +22,9 @@ Contents
 .. toctree::
 
    install
-   about
+   introduction
    usage
-   simulation
+   example
    plots
    upd
    faq
