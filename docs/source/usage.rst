@@ -1,4 +1,4 @@
- Usage
+Usage
 =====
 
 .. _run:
@@ -71,18 +71,32 @@ Default output files
 ------------
 Triomix produces several output files files. 
 
+``x2a.depth.tsv``: contains the depth ratio autosome vs chrX of each individual in a trio. Males are expected to have ~0.5 while female should have value ~1.0. 
 
-``*.counts``: contains the position of the SNP loci in either GroupA, B, or C. Contains the read depths, alternative read counts for the trios. In addition, based on the parental genotype, will determine whether the child inherited the SNP from the father (F) or the mother (M). This file is used as the input for ``mle.R`` which estimates the contamination level using maximum likelihood estimation. 
+``*.child.counts``: contains the position of the SNP loci in either GroupA, B, or C. Contains the read depths, alternative read counts for the trios. In addition, based on the parental genotype, will determine whether the child inherited the SNP from the father (F) or the mother (M). This file is used as the input for ``mle.R`` which estimates the contamination level using maximum likelihood estimation. 
 
+``*.child.counts.upd.segments.tsv``: contains the VAF values for GroupA SNPs that have been segmented for UPD analysis
 
-``*.counts.summary.tsv``: contains the final estimated values of contamination from various sources. 
+``*.child.counts.plot.pdf``: visualization of depth and VAF plots of GroupA and GroupB SNPs. 
 
+``*.child.counts.summary.tsv``: contains the final estimated values of contamination from various sources in the child. Detailed information on each column is as follows.
 
-``*.homoalt.segements``: 
+.. code-block:: bash
 
+   child_contam_by_sibling_joint # contamination estimated from joint analysis of all family members (GroupA + GroupB used)
+   child_contam_by_father_joint # contamination estimated from joint analysis of all family members (GroupA + GroupB used)
+   child_contam_by_mother_joint # contamination estimated from joint analysis of all family members (GroupA + GroupB used)
+   convergence_joint # mle function convergence status. If 0, then indicates convergence succeeded. 
+   child_contam_by_sibling # contamination estimated assuming only sibling contaminating (GroupB used)
+   child_contam_by_father # contamination estimated assuming only father contaminating (GroupA used)
+   child_contam_by_mother # contamination estimated assuming only mother contaminating (GroupA used)
+   groupA_father # number of paternal GroupA variants identified
+   groupA_mother # number of maternal GroupA variants identified
+   groupB_father # number of paternal GroupB variants identified
+   groupB_mother # number of maternal GroupB variants identified
+   denovo_error_rate # fraction of alternative read count at GroupC SNPs
 
-``*.summary``: contains the final results of ``triomix``. Detailed information on each column is as follows.
-
+ 
 
 
 Triomix with whole-exome sequencing
@@ -94,7 +108,7 @@ TrioMix can be used with whole-exome sequencing. In this case, we recommend runn
    $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -d 1
 
 
-Detection of intrafamilial contamination in the parent (i.e. parent DNA contamminated by child, or by another parent)
+Detection of intrafamilial contamination in the parent (i.e. parent DNA contaminated by child, or by another parent)
 ------------
 To detect intrafamilial DNA contamination in the parent, ``--parent`` option can be used. This will use *GroupD SNPs* (where offspring's genotype is *homo-alt*) to detect the offspring DNA contaminating in the parents. 
 
@@ -105,8 +119,22 @@ To detect intrafamilial DNA contamination in the parent, ``--parent`` option can
 
 Additional output generated with ``--parent`` 
 ------------
-``*.parent.counts``
+``*.parent.counts``: 
 ``*.parent.counts.summary.tsv``
+``*.parent.counts.plot.pdf``
+
+.. code-block:: bash
+
+  mother_contam_by_child  # contamination estimated in the mother (GroupD)
+  father_contam_by_child  # contamination estimated in the father (GroupD)
+  mother_contam_by_father # contamination estimated in the mother (GroupE)
+  father_contam_by_mother # contamination estimated in the fother (GroupE)
+  groupD_mother   # number of maternal GroupD variants identified
+  groupD_father   # number of paternal GroupD variants identified
+  groupE_mother   # number of maternal GroupE variants identified
+  groupE_father   # number of paternal GroupE variants identified
+
+
 
 
 
