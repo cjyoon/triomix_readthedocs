@@ -32,6 +32,15 @@ Other dependencies
 
 TrioMix internally uses ``samtools`` ``Rscript`` ``gzip``. Make sure these are in your ``$PATH``. Otherwise, you can edit the absolute path of each of these in ``path_config.json``. 
 
+.. code-block::console
+
+  $ cat path_config.json
+  {"SAMTOOLS": "/path/to/samtools", # default is 'samtools'
+   "RSCRIPT": "/path/to/Rscript", # default is 'Rscript'
+   "GZIP": "/path/to/gzip" # default is 'gzip'
+  }
+
+
 
 Using the docker images
 ----------------

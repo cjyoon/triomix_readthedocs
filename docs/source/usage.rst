@@ -12,7 +12,7 @@ TrioMix requires the input of sequence alignment file (BAM or CRAM files) of tri
 Basic Triomix command line: Detection of intrafamilial contamination in the offspring
 ------------
 
-By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer the intrafamilial contamination level in the child. The basic command line of using TrioMix is the following:
+By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer the intrafamilial contamination level in the offspring. Since ``-o`` is commonly reserved for outputs, we use ``-c, --child`` to refer to the offspring.  The basic command line of using TrioMix is the following:
 
 .. code-block:: console
 

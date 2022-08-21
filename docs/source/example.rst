@@ -110,7 +110,7 @@ Offspring DNA contaminated by father, mother, and a sibling
 ------------
 Here, we simulate a complex case where the offspring's DNA is coontaminated by the father, mother, and a sibling simultaneously.
 
-.. code-block:: console
+.. code-block:: bash
 
   ##################################
   # multiple contamination simulation, father=10%, mother=20%, offspring=40%, sibling=30%
