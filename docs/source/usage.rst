@@ -3,6 +3,12 @@ Usage
 
 .. _run:
 
+TrioMix requires the input of sequence alignment file (BAM or CRAM files) of trios and a reference FASTA. SNP BED files can be used as an option. 
+
+.. image:: images/workflow.jpg
+
+
+
 Basic Triomix command line: Detection of intrafamilial contamination in the offspring
 ------------
 
@@ -71,7 +77,7 @@ Default output files
 ------------
 Triomix produces several output files files. 
 
-``x2a.depth.tsv``: contains the depth ratio autosome vs chrX of each individual in a trio. Males are expected to have ~0.5 while female should have value ~1.0. 
+``*.x2a.depth.tsv``: contains the depth ratio chrX vs autosome of each individual in a trio. Males are expected to have ~0.5 while female should have value ~1.0. 
 
 ``*.child.counts``: contains the position of the SNP loci in either GroupA, B, or C. Contains the read depths, alternative read counts for the trios. In addition, based on the parental genotype, will determine whether the child inherited the SNP from the father (F) or the mother (M). This file is used as the input for ``mle.R`` which estimates the contamination level using maximum likelihood estimation. 
 
@@ -145,14 +151,15 @@ Following example demonstrates how docker image can be used for runnint TrioMix.
 .. code-block:: bash
 
    # Download docker image from dockerhub
-   $ docker pull cjyoon/triomix:v0.0.1
+   $ VERSION=v0.0.1 # download specific release version tag of TrioMix
+   $ docker pull cjyoon/triomix:$VERSION
 
    # Run triomix with docker image
    $ docker run \
       -v /path/to/bamfile:/path/to/bamfile \ # bind all folders where input files are located 
       -v /path/to/reference:/path/to/reference/ \ 
       -v /path/to/output_dir:/path/to/output_dir \ # also bind the location of output folder
-      -it cjyoon/triomix:v0.0.1  \
+      -it cjyoon/triomix:$VERSION  \
          python /tools/triomix/triomix.py \ # location of triomix.py in the docker image 
             -f /path/to/bamfile/father.bam \ # location of father's bam file 
             -m /path/to/bamfile/mother.bam \ # location of mother's bam file 
