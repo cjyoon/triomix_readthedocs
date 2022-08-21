@@ -6,8 +6,8 @@ project = 'TrioMix'
 copyright = '2022, Christopher J. Yoon'
 author = 'Christopher J. Yoon'
 
-release = '0.1'
-version = '0.1.0'
+release = '0.0.1'
+version = '0.0.1'
 
 # -- General configuration
 

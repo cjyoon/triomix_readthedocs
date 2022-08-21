@@ -1,9 +1,4 @@
-Template for the Read the Docs tutorial
+Github repository for TrioMix readthedocs manual
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+https://triomix.readthedocs.io/

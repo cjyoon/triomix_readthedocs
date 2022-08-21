@@ -26,22 +26,3 @@ TrioMix uses 5 different SNP groups in order to calculate different scenarios of
 
 
 
-.. Detection of parental DNA contamination in the offspring
-.. ------------
-
-
-
-.. Detection of sibling's DNA contamination in the offspring
-.. ------------
-
-
-
-.. Detection of offspring's DNA contamination in the parent
-.. ------------
-
-
-
-
-.. Detection of contamination between the parents
-.. ------------
-

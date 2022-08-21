@@ -3,7 +3,7 @@ Usage
 
 .. _run:
 
-TrioMix requires the input of sequence alignment file (BAM or CRAM files) of trios and a reference FASTA. SNP BED files can be used as an option. 
+TrioMix requires the input of sequence alignment file (BAM or CRAM files) of trios and a reference FASTA file. SNP BED file can be used as an optional argument. 
 
 .. image:: images/workflow.jpg
 

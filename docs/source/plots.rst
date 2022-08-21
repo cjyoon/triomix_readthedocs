@@ -1,6 +1,7 @@
 Plots
 =====
 
+Here are some real case example plots from TrioMix. 
 
 .. _plots:
 
@@ -27,13 +28,13 @@ Paternal uniparental isodisomy (UPiD) of chr4 is shown. Homozygosity of GroupA S
 Chimerism (from a sibling)
 ------------
 .. image:: images/chimera_example.jpg
-The meiotic recombination pattern between the two sibling zygotes are shown as segmental VAF patterns in GroupB SNPs. In this example Triomix quantified the ratio between the two zygotes of the chimera 22%:78% . 
+The meiotic recombination pattern between the two sibling zygotes are shown as segmental VAF patterns in GroupB SNPs. In this example Triomix quantified the ratio between the two zygotes of the chimera 22%:78%. 
 
 
 Maternal contamination in a placenta biopsy 
 ------------
 .. image:: images/placenta_maternal_contam_example.jpg
-Maternal blood can contaminate the fetal portions of the placenta biopsy. Maternal GroupA VAFs are increased and paternal GroupA VAFs are decreased (although the change may not be apparent). In GroupB, additional non-zero low level VAFs are seen only from the mother which suggests DNA contamination originating from the mother. In this example, TrioMix quantified that there is 6.6% maternal DNA contamination in the placenta biopsy. 
+Maternal blood can contaminate the fetal portions of the placenta biopsy. Maternal GroupA VAFs are increased (mean VAF=0.53) and paternal GroupA VAFs are decreased (mean VAF=0.47). In GroupB, additional non-zero low level VAFs are seen only from the mother which suggests DNA contamination originating from the mother. In this example, TrioMix quantified that there is 6.6% maternal DNA contamination in the placenta biopsy. 
 
 
 Sample swap (father <-> offspring)
