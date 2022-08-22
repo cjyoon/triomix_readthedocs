@@ -83,7 +83,7 @@ Triomix produces several output files files.
 
 ``*.child.counts.upd.segments.tsv``: contains the VAF values for GroupA SNPs that have been segmented for UPD analysis
 
-``*.child.counts.plot.pdf``: visualization of depth and VAF plots of GroupA and GroupB SNPs. 
+``*.child.counts.plot.pdf``: visualization of depth and VAF plots of GroupA and GroupB SNPs in the child. 
 
 ``*.child.counts.summary.tsv``: contains the final estimated values of contamination from various sources in the child. Detailed information on each column is as follows.
 
@@ -125,9 +125,11 @@ To detect intrafamilial DNA contamination in the parent, ``--parent`` option can
 
 Additional output generated with ``--parent`` 
 ------------
-``*.parent.counts``: 
-``*.parent.counts.summary.tsv``
-``*.parent.counts.plot.pdf``
+``*.parent.counts``: contains the position of the SNP loci in either Group D or E. Contains the read depths, alternative read counts for the trios. This file is used as the input for ``mle_parent.R`` which estimates the contamination level using maximum likelihood estimation. 
+
+``*.parent.counts.plot.pdf``: visualization of depth and VAF plots of GroupD and GroupE SNPs in the parents. 
+
+``*.parent.counts.summary.tsv``: contains the final estimated values of contamination from various sources in each parents. Detailed information on each column is as follows.
 
 .. code-block:: bash
 

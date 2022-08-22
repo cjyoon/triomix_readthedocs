@@ -8,13 +8,13 @@ Here are some real case example plots from TrioMix.
 
 Normal male offspring, uncontaminated 
 ------------
-.. image:: images/normal_male.plot.jpg
+.. image:: images/C16-blood.counts.plot.jpg
 This is an example of SNP VAFs in a male offspring without contamination. Note the drop in depth and homozygosity of chrX. 
 
 
 Normal female offspring, uncontaminated 
 ------------
-.. image:: images/normal_female.plot.jpg
+.. image:: images/C13-blood.counts.plot.jpg
 This is an example of SNP VAFs in a female offspring without contamination. Note that there is no paternal GroupB SNP on chrX since father only has one copy of chrX and cannot have heterozygous SNPs.
 
 
@@ -27,7 +27,7 @@ Paternal uniparental isodisomy (UPiD) of chr4 is shown. Homozygosity of GroupA S
 
 Chimerism (from a sibling)
 ------------
-.. image:: images/chimera_example.jpg
+.. image:: images/C14-blood.counts.plot.jpg
 The meiotic recombination pattern between the two sibling zygotes are shown as segmental VAF patterns in GroupB SNPs. In this example TrioMix quantified the ratio between the two zygotes of the chimera 22%:78%. 
 
 
