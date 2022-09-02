@@ -9,7 +9,7 @@ TrioMix requires the input of sequence alignment file (BAM or CRAM files) of tri
 
 
 
-Basic Triomix command line: Detection of intrafamilial contamination in the offspring
+Basic TrioMix command line: Detection of intrafamilial contamination in the offspring
 ------------
 
 By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer the intrafamilial contamination level in the offspring. Since ``-o`` is commonly reserved for outputs, we use ``-c, --child`` to refer to the offspring.  The basic command line of using TrioMix is the following:
@@ -21,6 +21,7 @@ By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer t
 
 
 .. code-block:: bash
+
    $ python triomix.py -h
    usage: triomix [-h] [--version] -f FATHER -m MOTHER -c CHILD -r REFERENCE [-s SNP] [-t THREAD] [-o OUTPUT_DIR]
                   [-p PREFIX] [--runmode {single,joint,all}] [-u {0,1}] [--parent] [-d DOWNSAMPLE]
@@ -56,7 +57,7 @@ By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer t
                            Downsampling for plotting.
 
 
-Triomix command line with common SNP only
+TrioMix command line with common SNP only
 ------------
 
 Using a pre-selected list of common SNP would speed up the total runtime of TrioMix as the computation is limited to those regions instead of the entire genome. TrioMix provides a list of common ``GRCh38`` and ``GRCh37`` SNPs selected from the GnomAD database. These two files are included in the github repository as a `common_snp <https://github.com/cjyoon/triomix/tree/master/common_snp/>`_ folder.  A ``-s`` argument specifies the SNP database that can be used. User can provide one's own set of SNP in BED format.
@@ -75,7 +76,7 @@ Other optional arguments
 
 Default output files
 ------------
-Triomix produces several output files files. 
+TrioMix produces several output files files. 
 
 ``*.x2a.depth.tsv``: contains the depth ratio chrX vs autosome of each individual in a trio. Males are expected to have ~0.5 while female should have value ~1.0. 
 
@@ -105,7 +106,7 @@ Triomix produces several output files files.
  
 
 
-Triomix with whole-exome sequencing
+TrioMix with whole-exome sequencing
 ------------
 TrioMix can be used with whole-exome sequencing. In this case, we recommend running the command without the ``-s common_snp/common_snps.bed.gz``  to capture rare SNPs as well. This increases the overall number of SNPs while having minimal effect on the computational time due to smaller target in the exome sequeincing. For plotting, using ``-d 1`` is recommended to capture all data points in the plot without downsampling.
 

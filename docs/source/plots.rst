@@ -37,21 +37,21 @@ Maternal contamination in a placenta biopsy
 Maternal blood can contaminate the fetal portions of the placenta biopsy. Maternal GroupA VAFs are increased (mean VAF=0.53) and paternal GroupA VAFs are decreased (mean VAF=0.47). In GroupB, additional non-zero low level VAFs are seen only from the mother which suggests DNA contamination originating from the mother. In this example, TrioMix quantified that there is 6.6% maternal DNA contamination in the placenta biopsy. 
 
 
-Sample swap (father <-> offspring)
+Sample swap (father ↔ offspring)
 ------------
 .. image:: images/father_proband_swap.counts.plot.jpg
 
 Sample swap between the father and offspring would lead to no GroupA SNPs since a offspring and another parent can both be homozygous for a different allele at the same time (i.e. offspring: *homo-alt*, father: *homo-ref*). Thus, there is no GroupA variants. For GroupB SNPs, if the offspring is a *het* genotype, then the father can be a *het* or *homo-alt* genotype. Thus a *homo-alt* (VAF=1) is seen in GroupB in the parent that is swapped with an offspring.
 
 
-Sample swap (mother <-> offspring)
+Sample swap (mother ↔ offspring)
 ------------
 .. image:: images/mother_proband_swap.counts.plot.jpg
 
 Sample swap between the mother and offspring would lead to no GroupA SNPs since a offspring and another parent can both be homozygous for a different allele at the same time (i.e. offspring: *homo-alt*, mother: *homo-ref*). Thus, there is no GroupA variants. For GroupB SNPs, if the offspring is a *het* genotype, then the mother can be a *het* or *homo-alt* genotype. Thus a *homo-alt* (VAF=1) is seen in GroupB in the parent that is swapped with an offspring.
 
 
-Sample swap (father <-> mother)
+Sample swap (father ↔ mother)
 ------------
 .. image:: images/father_mother_swap.counts.plot.jpg
 
