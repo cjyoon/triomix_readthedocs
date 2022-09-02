@@ -20,6 +20,21 @@ By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer t
 
 
 
+TrioMix command line with common SNP only
+------------
+
+Using a pre-selected list of common SNP would speed up the total runtime of TrioMix as the computation is limited to those regions instead of the entire genome. TrioMix provides a list of common ``GRCh38`` and ``GRCh37`` SNPs selected from the GnomAD database. These two files are included in the github repository as a `common_snp <https://github.com/cjyoon/triomix/tree/master/common_snp/>`_ folder.  A ``-s`` argument specifies the SNP database that can be used. User can provide one's own set of SNP in BED format.
+
+
+.. code-block:: bash
+
+   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz
+
+
+Other optional arguments
+------------
+
+
 .. code-block:: bash
 
    $ python triomix.py -h
@@ -55,22 +70,6 @@ By default, TrioMix uses the parental genotypes (*GroupA, B, C SNPs*) to infer t
      --parent              Run detection of parental DNA contamination with child's DNA
      -d DOWNSAMPLE, --downsample DOWNSAMPLE
                            Downsampling for plotting.
-
-
-TrioMix command line with common SNP only
-------------
-
-Using a pre-selected list of common SNP would speed up the total runtime of TrioMix as the computation is limited to those regions instead of the entire genome. TrioMix provides a list of common ``GRCh38`` and ``GRCh37`` SNPs selected from the GnomAD database. These two files are included in the github repository as a `common_snp <https://github.com/cjyoon/triomix/tree/master/common_snp/>`_ folder.  A ``-s`` argument specifies the SNP database that can be used. User can provide one's own set of SNP in BED format.
-
-
-.. code-block:: bash
-
-   $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz
-
-
-Other optional arguments
-------------
-
 
 
 
