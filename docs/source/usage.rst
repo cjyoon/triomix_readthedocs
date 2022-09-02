@@ -35,7 +35,7 @@ Other optional arguments
 ------------
 
 
-.. code-block:: bash
+.. code-block:: none
 
    $ python triomix.py -h
    usage: triomix [-h] [--version] -f FATHER -m MOTHER -c CHILD -r REFERENCE [-s SNP] [-t THREAD] [-o OUTPUT_DIR]
