@@ -31,7 +31,7 @@ Using a pre-selected list of common SNP would speed up the total runtime of Trio
    $ python triomix.py -f father.bam -m mother.bam -c child.bam -r reference.fasta -s common_snps/grch38_common_snps.bed.gz
 
 
-Other optional arguments
+Command line arguments
 ------------
 
 
