@@ -8,7 +8,7 @@ Check out the :doc:`usage` section for further information, including how to :re
 
 If you use Triomix in your analysis, please cite our work published in XXXX.
 
-"Estimation of intrafamilial DNA contamination in family trio genome sequencing using Mendelian inconsistencies. Yoon et al., Under revision (2022)"
+"Estimation of intrafamilial DNA contamination in family trio genome sequencing using Mendelian inconsistencies. Yoon et al., Genome Research (2022) in press"
 
 
 .. note::
