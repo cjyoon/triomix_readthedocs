@@ -11,9 +11,9 @@ If you use Triomix in your analysis, please cite our work below.
 "Estimation of intrafamilial DNA contamination in family trio genome sequencing using Mendelian inconsistencies. Yoon et al., Genome Research (2022)" `[link to paper] <https://doi.org/10.1101/gr.276794.122>`_
 
 
-.. note::
+.. .. note::
 
-   This project is under active development.
+..    This project is under active development.
 
 
 Contents
