@@ -6,9 +6,9 @@ TrioMix can be installed by cloning the `github <https://github.com/cjyoon/triom
 
 Check out the :doc:`usage` section for further information, including how to :ref:`install` the project.
 
-If you use Triomix in your analysis, please cite our work published in Genome Research.
+If you use Triomix in your analysis, please cite our work below.
 
-"Estimation of intrafamilial DNA contamination in family trio genome sequencing using Mendelian inconsistencies. Yoon et al., Genome Research (2022) *in press*"
+"Estimation of intrafamilial DNA contamination in family trio genome sequencing using Mendelian inconsistencies. Yoon et al., Genome Research (2022)" `[link to paper] <https://doi.org/10.1101/gr.276794.122>`_
 
 
 .. note::
